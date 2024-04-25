@@ -4,20 +4,29 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "node_modules/.bin/mocha --reporter mocha-circleci-reporter test/*.js",
+    "test": "mocha --reporter mocha-circleci-reporter test/*.js",
     "dev": "nodemon ./bin/www"
   },
   "dependencies": {
+    "body-parser": "^1.20.2",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
-    "express": "~4.16.1",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
     "http-errors": "~1.6.3",
     "mocha": "^9.2.0",
     "mocha-circleci-reporter": "0.0.3",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "serve-index": "^1.9.1",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
-  }
+  },
+  "description": "# Project Dependencies 1. Node.js 2. Truffle ... --- # Install Dependencies 1. use the cd command to navigate to the downloaded projects directory 2. Run the npm install command",
+  "main": "app.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
